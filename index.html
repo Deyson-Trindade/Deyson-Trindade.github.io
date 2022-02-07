@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="spider-web.png" alt="spider-web" id="spider-web">
+        <img src="pngegg.png" alt="spiders" id="spiders">
+        <h2 id="text">Spider-Man</h2>
+        <a href="#sec" id="btn">Explore</a>
+       <!-- <img src="cocoon.png" alt="cocoon" id="cocoon"> -->
+    </section>
+    <div class="sec" id="sec">
+        <h2>Peter Parker History</h2>
+        <p>When Peter was fifteen years old, he was interested in a scientific exhibition on radioactivity at General Techtronics Laboratories East. 
+            When none of his fellow students were interested in going with him, Peter went on his own.
+            [35][note 5] Unknown to Peter, he was being followed by his tormentor Carl King who sought to bully him some more that day. <br><br>
+            [19] During the experiment that day, a lone spider lowered into the path of radioactive energy that was being transmitted by the particle accelerator being demonstrated . 
+            This radioactive spider ended up on Peter's hand and bit him. Peter quickly realized that the spider had been radiated, and quickly excused himself from the room when he began to feel ill as a result of the bite.
+            [35] Unknown to Peter at the time, the spider also bit Cindy Moon another student that was attending the demonstration, a woman that would play an important role in Peter's future many years later.
+            [37][note 6] Also unknown to Peter was the fact that he was still being watched by Carl King, who witnessed everything that happened next...[19] <br><br>
+            As Peter rushed outside he was also witnessed by Flash and Liz Allan, who both had a laugh at his condition.[7] Peter was also confronted by two bullies from his school; Peter was surprised when he was able to take a punch.
+            When Peter tried to hit back, the bully dodged the blow, and Peter struck a lamp post, causing it to fall over, much to his surprise.[38][39] Walking out into traffic, Peter was almost run down by a car, but he managed to make a leap across the street and was further surprised when he was able to cling to the wall as well. As he climbed to the top of the building the only witness was a child.[35][40] Peter soon discovered that the spider's bite had granted him with the proportionate strength, speed and agility of a spider.[35]
+            By most accounts, Peter Parker's powers were the source of the radioactivity combining with the spider DNA, giving him his spider powers.[35] However, Peter's spider powers originate from a far greater source. The Great Weaver, a totemic deity of the spider, selected Peter to be his avatar in reality-616.</p>
+    </div>
+    <script>
+        let spiderWeb = document.getElementById('spider-web');
+        let spiders = document.getElementById('spiders');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            let value = window.scrollY;
+            spiderWeb.style.left = value*0.25 + 'px';
+            spiders.style.top = value*1.05 + 'px';
+            text.style.marginRight = value*4 + 'px';
+            btn.style.marginTop = value*1.5 + 'px';
+            header.style.top = value*0.5 + 'px';
+
+        })
+    </script>
+</body>
+</html>
